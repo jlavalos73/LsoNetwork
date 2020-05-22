@@ -11,13 +11,14 @@ import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Component
 @Entity
 @Table(name = "study_away_location")
-@Data @NoArgsConstructor
+@Data @NoArgsConstructor @AllArgsConstructor
 public class StudyAwayLocation implements Serializable{
 	private static final long serialVersionUID = 7496428392681841028L;
 
