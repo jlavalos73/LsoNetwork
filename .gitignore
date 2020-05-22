@@ -12,6 +12,7 @@
 
 # Package Files #
 .metadata 
+target/
 bin/ 
 tmp/ 
 *.tmp 

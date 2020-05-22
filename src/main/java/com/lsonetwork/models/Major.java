@@ -11,13 +11,14 @@ import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Component
 @Entity
 @Table(name = "majors")
-@NoArgsConstructor @Data
+@AllArgsConstructor @NoArgsConstructor @Data
 public class Major implements Serializable{
 	private static final long serialVersionUID = -8278082149094865927L;
 

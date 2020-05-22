@@ -13,13 +13,14 @@ import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Component
 @Entity
 @Table(name = "projects")
-@Data @NoArgsConstructor
+@Data @NoArgsConstructor @AllArgsConstructor
 public class Project implements Serializable{
 	
 	private static final long serialVersionUID = 7995457208042373759L;
