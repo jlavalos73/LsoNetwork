@@ -95,6 +95,29 @@ public class User implements Serializable{
 	@Column(name = "lso_role")
 	private LSORole lsoRole;
 	
+	public User(UserDTO userDTO) {
+		super();
+		if (userDTO != null) {
+			this.userId = userDTO.getUserId();
+			this.userName = userDTO.getUserName();
+			this.firstName = userDTO.getFirstName();
+			this.lastName = userDTO.getLastName();
+			this.email = userDTO.getEmail();
+			this.phoneNumber = userDTO.getPhoneNumber();
+			this.address = new Address(userDTO.getAddress());
+			this.majors = userDTO.getMajors();
+			this.minors = userDTO.getMinors();
+			this.concentrations = userDTO.getConcentrations();
+			this.abroadLocation = userDTO.getAbroadLocation();
+			this.awayLocation = userDTO.getAwayLocation();
+			this.userType = userDTO.getUserType();
+			this.jobTitle = userDTO.getJobTitle();
+			this.permissionLevel = userDTO.getPermissionLevel();
+			this.graduationDate = userDTO.getGraduationDate();
+			this.lsoRole = userDTO.getLsoRole();
+		}
+	}
+	
 }
 
 

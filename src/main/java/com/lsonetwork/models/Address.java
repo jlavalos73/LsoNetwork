@@ -33,4 +33,15 @@ public class Address implements Serializable{
 	private String state;
 	private String zip;
 	
+	public Address(AddressDTO addressDTO) {
+		super();
+		if (addressDTO != null) {
+			this.addressId = addressDTO.getId();
+			this.street = addressDTO.getStreet();
+			this.unit = addressDTO.getUnit();
+			this.city = addressDTO.getCity();
+			this.state = addressDTO.getState();
+			this.zip = addressDTO.getZip();
+		}
+	}
 }

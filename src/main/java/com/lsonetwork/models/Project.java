@@ -43,4 +43,14 @@ public class Project implements Serializable{
 	@Column(name = "project_type")
 	private ProjectType projectType;
 	
+	public Project(ProjectDTO projectDTO) {
+		super();
+		if (projectDTO != null) {
+			this.projectId = projectDTO.getProjectId();
+			this.user = new User(projectDTO.getUser());
+			this.projectName = projectDTO.getProjectName();
+			this.projectDescription = projectDTO.getProjectDescription();
+			this.projectType = projectDTO.getProjectType();
+		}
+	}
 }
