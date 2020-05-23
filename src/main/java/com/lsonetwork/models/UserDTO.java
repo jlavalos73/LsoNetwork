@@ -53,7 +53,7 @@ public class UserDTO {
 	
 	private List<Concentration> concentrations;
 	
-	private StudyAbroadLocation abroadLocaiton;
+	private StudyAbroadLocation abroadLocation;
 	
 	private StudyAwayLocation awayLocation;
 	
@@ -81,7 +81,7 @@ public class UserDTO {
 			this.majors = user.getMajors();
 			this.minors = user.getMinors();
 			this.concentrations = user.getConcentrations();
-			this.abroadLocaiton = user.getAbroadLocation();
+			this.abroadLocation = user.getAbroadLocation();
 			this.awayLocation = user.getAwayLocation();
 			this.userType = user.getUserType();
 			this.jobTitle = user.getJobTitle();
